@@ -1,0 +1,347 @@
+/* Slider */
+.slick-slider {
+
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Arrows */
+.category-mv .slick-prev {
+    display: block;
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    line-height: 0;
+    border: none;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.category-mv .slick-prev {
+    left: 70px;
+    background: url(../img/category/ico_slick_left.png) no-repeat center/contain;
+    content: "";
+}
+
+.category-mv .slick-next {
+    display: block;
+    position: absolute;
+    top: 44%;
+    width: 64px;
+    height: 64px;
+    line-height: 0;
+    border: none;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.category-mv .slick-next {
+    right: 123px;
+    background: url(../img/category/ico_slick_right.png) no-repeat center/contain;
+    content: "";
+}
+
+/* Dots */
+.slick-dots {
+    display: block;
+    position: absolute;
+    bottom: 34px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    position: relative;
+    margin: 0 2.6px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    display: block;
+    padding: 7px;
+    border: 1px solid #FF8800;
+    background-color: #FFFFFF;
+    font-size: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FF8800;
+}
+.pslider.slick-slider{
+    position: relative;
+    width: 569px;
+}
+
+.pslider.slick-slider img{
+    max-width: 100%;
+}
+
+.pslider .left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.pslider .right-arrow{
+    position: absolute;
+    top:50%;
+    right: 20px;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width:768px) and (max-width:1300px) {
+    .category-mv .slick-prev {
+        top: 22%;
+        z-index: 1;
+        width: 72px;
+        height: 72px;
+    }
+
+    .category-mv .slick-prev {
+        left: 3.906vw;
+        background: url(../img/category/ico_tablet_prev.png) no-repeat center/contain;
+        content: "";
+    }
+
+    .category-mv .slick-next {
+        top: 22%;
+        width: 72px;
+        height: 72px;
+    }
+
+    .category-mv .slick-next {
+        right: 3.906vw;
+        background: url(../img/category/ico_tab_right.png) no-repeat center/contain;
+        content: "";
+    }
+
+    /* Dots */
+    .slick-dots {
+        bottom: 3.255vw;
+        left: 0;
+    }
+
+    .slick-dots li {
+        margin: 0 0.339vw;
+    }
+
+    .slick-dots li button {
+        padding: 0.911vw;
+        border: 0.13vw solid #FF8800;
+    }
+   /* Product */
+   .pslider.slick-slider{
+    position: relative;
+    width: 74.089vw;
+}
+
+.pslider.slick-slider img{
+    max-width: 100%;
+}
+
+.pslider .left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 2.604vw;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.pslider .right-arrow{
+    position: absolute;
+    top:50%;
+    right: 2.604vw;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+}
+
+@media screen and (max-width:767.9px) {
+
+    /* Arrows */
+    .category-mv .slick-prev {
+        top: 22%;
+        z-index: 1;
+        width: 9.375vw;
+        height: 9.375vw;
+    }
+
+    .category-mv .slick-prev {
+        left: 3.281vw;
+        content: "";
+    }
+
+    .category-mv .slick-next {
+        top: 22%;
+        width: 9.375vw;
+        height: 9.375vw;
+    }
+
+    .category-mv .slick-next {
+        right: 3.281vw;
+        content: "";
+    }
+
+    /* Dots */
+    .slick-dots {
+        bottom: 2.656vw;
+    }
+
+    .slick-dots li {
+        margin: 0 0.406vw;
+    }
+
+    .slick-dots li button {
+        padding: 1.094vw;
+        border: 0.156vw solid #FF8800;
+    }
+    /* Product*/
+    .pslider.slick-slider{
+        position: relative;
+        width: 100%;
+    }
+    
+    .pslider.slick-slider img{
+        max-width: 100%;
+    }
+    
+    .pslider .left-arrow{
+        position: absolute;
+        top: 51%;
+        left: 3.125vw;
+        z-index: 100;
+        transform: translateY(-50%);
+    }
+    
+    .pslider .right-arrow{
+        position: absolute;
+        top:51%;
+        right: 3.125vw;
+        z-index: 10;
+        transform: translateY(-50%);
+    }
+}
